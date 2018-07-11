@@ -66,7 +66,7 @@ $(document).ready(function(){
         console.log(nameOfTodo)
         console.log(timeOfTodo)
 
-        $("ul").append("<li class='index-bar'> <input type='checkbox' class='check'><a href='show.html' style='text-decoration:none'> "+nameOfTodo+" </a><span class='day-est'>"+timeOfTodo+" day(s)</span></li>")
+        $("ul").append("<li class='index-bar'> <input type='checkbox' class='check'><a href='show/1' style='text-decoration:none'> "+nameOfTodo+" </a><span class='day-est'>"+timeOfTodo+" day(s)</span></li>")
             })
             
             $("ul").on("click","input[type='checkbox']",function(){

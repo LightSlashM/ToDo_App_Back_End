@@ -6,7 +6,9 @@ class TodoController < ApplicationController
         @todo_days= 4
         
         todo_id=params[:id]
-        
+        #@todo_days will be 0.00001 day(s)
+    @todo= Todo.find_by_id(params[:id])
+=begin
         if todo_id== '1'
             @todo_name='Buy a giraffe'
             @todo_days= 20
@@ -29,6 +31,7 @@ class TodoController < ApplicationController
             
         
         end
+=end        
         #when user goes to
         #todo/show/1
         #@todo_name will be
@@ -51,9 +54,17 @@ class TodoController < ApplicationController
         #todo/show/4
         #@todo_name will be
         #Read 200 chapters of textbooks and
-        #@todo_days will be 0.00001 day(s)
 
         
+    end
+    def new
+    end
+    def create
+        t=Todo.new
+        t.description= params['description']
+        t.time_estimate= params['time_estimate']
+        t.save
+        redirect_to "/todo/show/#{t.id}"
     end
     
 end

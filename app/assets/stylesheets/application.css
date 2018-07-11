@@ -137,18 +137,17 @@ body {
     background-color: grey;
     margin: 0 auto;
     max-width: 600px;
-    padding-left: 30px;
+    text-align: center;
     border-radius: 5px;
+
+    height: 40px;
+    
 }
 .completed-todo{
     text-decoration: line-through;
 }
 
-.material-icons{
-    color: red;
-    display: none;
-    
-}
+
 /*end of index.css*/
 
 /*start of show.css*/
