@@ -108,10 +108,10 @@ input[type=checkbox] {
          left: 7px;
 }
 
-li:hover{
+.index-bar:hover{
     background-color: grey;
 }
-li{
+.index-bar{
     background-color: #2ECC40;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -185,7 +185,7 @@ input[type=checkbox] {
 
 #bar-show {
     background-color: gray;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 8px;
     margin: 0 auto;
     max-width: 600px;
@@ -216,5 +216,12 @@ h1{
 #content-show{
     color: black;
     margin-left: 10px;
+    max-width: 600px;
+}
+#show-first-bar{
+    background-color: #2ECC40;
+    padding: 8px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 /*end of show.css*/
