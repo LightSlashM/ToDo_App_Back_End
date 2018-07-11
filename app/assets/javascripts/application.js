@@ -1,3 +1,4 @@
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -14,6 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 console.log("Hello World");
 /*
 $(document.ready(function(){
@@ -35,6 +37,7 @@ $(document).ready(function({
 )
 )
 */
+/*
 $(document).ready(function(){
     //$(".material-icons").hide()
     console.log("Im ready")
@@ -45,14 +48,31 @@ $(document).ready(function(){
         console.log(nameOfTodo)
         console.log(timeOfTodo)
 
-        $("ul").append("<li> <input type='checkbox' class='check'><a href='show.html' style='text-decoration:none'> "+nameOfTodo+" </a><span class='day-est'>"+timeOfTodo+" day(s)</span></li>")
+        $("ul").append( "<li class='index-bar'> <input type='checkbox' class='check'><a href='show/3' style='text-decoration:none'>"+nameOfTodo+"</a><span class='day-est'>"+timeOfTodo+"day(s)</span></li>")
+})
+                      
+            $("ul").on("click","input[type='checkbox']",function(){
+                $(this).closest("li").toggleClass("completed-todo")
+        
+            })
+            */
+            $(document).ready(function(){
+    //$(".material-icons").hide()
+    console.log("Im ready")
+    $("#add-todo-btn").click(function(){
+        console.log("Buttons are now functional")
+        var nameOfTodo =$("#new-todo-name").val();
+        var timeOfTodo =$("#new-todo-days").val();
+        console.log(nameOfTodo)
+        console.log(timeOfTodo)
+
+        $("ul").append("<li class='index-bar'> <input type='checkbox' class='check'><a href='show.html' style='text-decoration:none'> "+nameOfTodo+" </a><span class='day-est'>"+timeOfTodo+" day(s)</span></li>")
             })
             
             $("ul").on("click","input[type='checkbox']",function(){
         $(this).closest("li").toggleClass("completed-todo")
         
             })
-            
          /*   
             $("li").hover(function({$(this).closest(".material-icons").show()
             console.log("checkmate");},
@@ -71,6 +91,7 @@ $(document).ready(function(){
                 $(".material-icons").show();
             }
             */
+           /*
            setInterval(function(){
                 var $sample = $(".bar");
                 var $changed = $(".material-icons");
@@ -82,5 +103,5 @@ $(document).ready(function(){
                     }
             }, 200);
             
-            
+            */
 })
