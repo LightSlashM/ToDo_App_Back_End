@@ -115,25 +115,30 @@ li{
     background-color: #2ECC40;
     padding-top: 5px;
     padding-bottom: 5px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 h1{
     text-align: center;
     background-color: cyan;
     border-radius: 15px;
-    
-    
+    display: flex;
+    height: 30px;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0  auto;
 }
 body {
     background: linear-gradient(white,grey) fixed;
     
 }
 #add-index{
-    padding-left: 30px;
     background-color: grey;
-    margin-left: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 30px;
     border-radius: 5px;
-    margin-right: 0px;
-    padding: 5px;
 }
 .completed-todo{
     text-decoration: line-through;
@@ -182,6 +187,9 @@ input[type=checkbox] {
     background-color: gray;
     border-radius: 5px;
     padding: 8px;
+    margin: 0 auto;
+    max-width: 600px;
+
 }
 
 .btn{
@@ -191,11 +199,7 @@ input[type=checkbox] {
     border-radius: 5px;
     margin: 1px;
 }
-li{
-    background-color: #2ECC40;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
+
 h1{
     text-align: center;
     background-color: cyan;
