@@ -1,0 +1,16 @@
+<div class="card">
+   <a href="/" class="head-link">
+  <h1>Messed up your task?</h1>
+  </a>
+    <p></p>
+      <form action="/todo/update/<%= @todo.id %>">
+          <p class="bar-show">
+          
+            <input class="text-input" name="description" type="text" value="<%= @todo.description %>">
+            <input class="text-input" name="time_estimate" type="number" value="<%= @todo.time_estimate %>">
+            <input class="edit-todo-button" type="submit" value="Edit" >
+            <a href="/" class="go-back">Go back......</a>
+          </p>
+      </form>
+  
+</div>

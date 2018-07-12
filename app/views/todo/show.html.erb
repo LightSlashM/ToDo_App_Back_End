@@ -1,5 +1,7 @@
 <!--<h3>Todo<%=params[:id]%></h3>-->
-        <h1 id="head">Review these ToDo's</h1>
+        <h1 id="head" class="head-link">
+            <a href="/">
+            Review this ToDo </a></h1>
            <p style="font-size: 60px"></p>
 
            <u1 style="list-style: none">
@@ -8,11 +10,11 @@
             </u1>
         
         <div>    
-            <p id="bar-show">
+            <p class="bar-show">
                     
-                <a href="#" id="edt-btn" class="btn" style="text-decoration:none">edit</a>
-                <a href="#" id="delete-btn" class="btn" style="text-decoration:none">delete</a>
-                <a href="/todo/index"  id="gback" style="text-decoration:none">go back</a>
+                <a href="/todo/edit/<%= @todo.id %>" id="edt-btn" class="btn" style="text-decoration:none">edit</a>
+                <a href="/todo/destroy/<%= @todo.id %>" id="delete-btn" class="btn" style="text-decoration:none">delete</a>
+                <a href="/"  id="gback" style="text-decoration:none">go back</a>
             </p>
 
             
