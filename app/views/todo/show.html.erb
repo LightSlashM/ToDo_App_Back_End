@@ -1,4 +1,4 @@
-<!--<h3>Todo<%=params[:id]%></h3>-->
+
         <h1 id="head" class="head-link">
             <a href="/">
             Review this ToDo </a></h1>
@@ -6,13 +6,14 @@
 
            <u1 style="list-style: none">
                 
-                <li id="show-first-bar"><span id="content-show"><%=@todo.description%></span><span class="day-est"><%=@todo.time_estimate %> days(s)</span></li>
+                <li id="show-first-bar"><span id="content-show"><%=@todo.description %></span><span class="day-est"><%=@todo.time_estimate %> days(s)</span></li>
             </u1>
         
         <div>    
             <p class="bar-show"
-                    
-                <a href="/todo/edit/<%= @todo.id %>" id="edt-btn" class="btn" style="text-decoration:none">edit</a>
+            
+                <a href="/todo/edit/<%= @todo.id %>" id="edt-btn" class="edit-todo-button" style="text-decoration:none" ></a>
+                <a href="/todo/edit/<%= @todo.id %>" id="edt-btn" class="edit-todo-button" style="text-decoration:none">edit</a>
                 <a href="/todo/destroy/<%= @todo.id %>" id="delete-btn" class="btn" style="text-decoration:none">delete</a>
                 <a href="/"  id="gback" style="text-decoration:none">go back</a>
             </p>
